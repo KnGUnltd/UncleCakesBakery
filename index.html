@@ -1,51 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flavor Fusion</title>
+  <title>Uncle Cakes Kitchen</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
+
 <body>
+  <!---Header starts here-->
   <header>
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">Recipes</a></li>
+        <li><a href="#">Browse Recipes</a></li>
         <li><a href="#">Submit a Recipe</a></li>
-        <li><a href="#">Community</a></li>
-        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+    <nav>
+      <ul class="account">
+        <li><a href="#">My Account</a></li>
+        <li><a href="#">Sign In</a></li>
       </ul>
     </nav>
   </header>
+  <!---Header stops here-->
 
   <main>
-    <section class="hero">
-      <h1>Welcome to Flavor Fusion</h1>
-      <p>Discover and share a world of delicious recipes</p>
-      <a href="#" class="cta">Explore Recipes</a>
-    </section>
+    <!---Center starts here-->
+    <section class="center">
 
-    <section class="recipe-search">
-      <h2>Find Your Next Favorite Recipe</h2>
-      <form>
-        <input type="text" placeholder="Search recipes">
+      <h1>Welcome to Uncle Cakes Kitchen</h1>
+      <p>Discover and share delicious recipes</p>
+
+      <form class="search-form">
+        <input type="text" placeholder="Search recipes..." />
+        <div class="filter-options">
+          <select id="category-filter">
+            <option value="">All Categories</option>
+            <!-- Dynamically populate category options -->
+          </select>
+          <select id="cuisine-filter">
+            <option value="">All Cuisines</option>
+            <!-- Dynamically populate cuisine options -->
+          </select>
+        </div>
         <button type="submit">Search</button>
       </form>
-    </section>
 
+    </section>
+    <!---Center stops here-->
+
+    
+    <!---Featured recipes STARTS here-->
     <section class="featured-recipes">
+
       <h2>Featured Recipes</h2>
+
       <div class="recipe-grid">
-        <!-- Add recipe cards here -->
+
+        <div class="box">
+          <img src="sample.png" alt="">
+          <h3>Sample Recipe 1</h3>
+          <a href="#" class="button">Open</a>
+        </div>
+
+        <div class="box">
+          <img src="sample.png" alt="">
+          <h3>Sample Recipe 2</h3>
+          <a href="#" class="button">Open</a>
+        </div>
+
+        <div class="box">
+          <img src="sample.png" alt="">
+          <h3>Sample Recipe 2</h3>
+          <a href="#" class="button">Open</a>
+        </div>
+
+        <div class="box">
+          <img src="sample.png" alt="">
+          <h3>Sample Recipe 2</h3>
+          <a href="#" class="button">Open</a>
+        </div>
+
+        <div class="box">
+          <img src="sample.png" alt="">
+          <h3>Sample Recipe 2</h3>
+          <a href="#" class="button">Open</a>
+        </div>
+
+        <div class="box">
+          <img src="sample.png" alt="">
+          <h3>Sample Recipe 2</h3>
+          <a href="#" class="button">Open</a>
+        </div>
+
+        <div class="box">
+          <img src="sample.png" alt="">
+          <h3>Sample Recipe 2</h3>
+          <a href="#" class="button">Open</a>
+        </div>
+
+        <div class="box">
+          <img src="sample.png" alt="">
+          <h3>Sample Recipe 2</h3>
+          <a href="#" class="button">Open</a>
+        </div>
+
+        <div class="box">
+          <img src="sample.png" alt="">
+          <h3>Sample Recipe 2</h3>
+          <a href="#" class="button">Open</a>
+        </div>
+
       </div>
     </section>
+
+    <section class="recipe-details-page" style="display: none;">
+      <div class="recipe-details">
+        <!-- Dynamically generate detailed recipe information here -->
+      </div>
+    </section>
+    <!---Featured recipes STOPS here-->
+
+    
   </main>
 
   <footer>
-    <p>© 2023 Flavor Fusion. All rights reserved.</p>
+    <p>© 2023 Recipe Database. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+

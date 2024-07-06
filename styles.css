@@ -1,104 +1,215 @@
-/* Global Styles */
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-/* Header Styles */
+/* Header and Navigation */
 header {
-  background-color: #333;
+  background-color: #894e1f;
   color: #fff;
   padding: 1rem;
 }
 
 nav ul {
-  list-style-type: none;
   display: flex;
-  justify-content: center;
+  list-style-type: none;
   margin: 0;
   padding: 0;
+  justify-content: left;
+}
+
+nav .account{
+  display: flex;
+  justify-content: right;
 }
 
 nav ul li {
-  margin: 0 1rem;
+  margin: 0 0.5rem;
 }
 
-nav ul li a {
-  color: #fff;
+nav a {
+  color: #ffffff;
   text-decoration: none;
 }
 
-/* Hero Section Styles */
-.hero {
-  background-image: url('hero-image.jpg');
+nav a:hover {
+  color: #ccc;
+}
+
+/* center Section */
+.center {
+  background-image: url('website background.jpg');
   background-size: cover;
   background-position: center;
   color: #fff;
-  padding: 4rem 2rem;
-  text-align: center;
+  padding: 8rem 2rem;
+  text-align: left;
 }
 
-.hero h1 {
+/* center text STARTS here */
+.center h1 {
   font-size: 3rem;
+  margin-bottom: 0rem;
+}
+
+.center p{
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
+/* center text STOPS here */
 
-.hero p {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
+
+/* center form STARTS here */
+.search-form {
+  display: flex;
+  justify-content: left;
+  margin-top: 2rem;
 }
 
-.cta {
-  background-color: #e74c3c;
-  border-radius: 5px;
+.search-form input,
+.search-form select,
+.search-form button {
+  background-color: #894e1f;
   color: #fff;
-  display: inline-block;
-  font-size: 1.2rem;
-  padding: 1rem 2rem;
-  text-decoration: none;
-}
-
-/* Recipe Search Styles */
-.recipe-search {
-  background-color: #f1f1f1;
-  padding: 2rem;
-  text-align: center;
-}
-
-.recipe-search input[type="text"] {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
+  margin: 0 0.5rem;
   padding: 0.5rem 1rem;
-  width: 60%;
-}
-
-.recipe-search button {
-  background-color: #2980b9;
   border: none;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
+  border-radius: 4px;
 }
 
-/* Featured Recipes Styles */
+.search-form button {
+  color: #fff;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: #894e2f;
+}
+/* center form STOPS here */
+
+
+/* Featured Recipes section STARTS here*/
 .featured-recipes {
-  padding: 2rem;
+  background:linear-gradient(45deg, #ce7e6a,#894e1f ) ;
+  padding: 15px 9%;
+  padding-bottom: 100%;
+}
+
+.featured-recipes, h2{
+  text-align: center;
+  padding-bottom: 15px;
+  color: #fff;
 }
 
 .recipe-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 15px;
 }
 
-/* Footer Styles */
-footer {
-  background-color: #333;
+.recipe-grid, .box{
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background: #894e1f;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.box img{
+  width: 150px;
+  height: 150px;
+}
+
+.box a{
+  text-decoration: none;
+}
+
+.box .button{
+  margin-bottom: 10px;
+  display: inline-block;
+  background: #333;
   color: #fff;
+  font-size: 17px;
+  border-radius: 5px;
+  padding: 8px 25px;
+}
+
+.box .button:hover{
+  letter-spacing: 1px;
+}
+
+.box:hover{
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02);
+}
+
+.recipe-card {
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.recipe-card h3 {
   padding: 1rem;
+  margin: 0;
+}
+
+/* Recipe Details Page */
+.recipe-details-page {
+  padding: 2rem;
+}
+
+.recipe-details {
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.recipe-details h2 {
+  margin-top: 0;
+}
+
+.recipe-details img {
+  max-width: 100%;
+  height: auto;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.rating span {
+  margin-right: 0.5rem;
+}
+
+.stars {
+  color: gold;
+}
+
+.comments .comment {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #894e1f;
+  color: #fff;
+  padding: 0.5rem;
   text-align: center;
 }
-
